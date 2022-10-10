@@ -16,6 +16,7 @@ import kotlin.system.exitProcess
 
 
 class GuiInterface : ActionListener, KeyAdapter() {
+    val version = "1.0.1"
     private var frame = JFrame("ShutUpPC by TheRockYT")
     private var jtable: JTable? = null
     private var pctable: PcConfigTable? = null
@@ -135,7 +136,7 @@ class GuiInterface : ActionListener, KeyAdapter() {
                     exitProcess(0)
                 }
                 if(src.text.equals("About")){
-                    JOptionPane.showMessageDialog(frame, "ShutUpPC by TheRockYT\nWebsite: https://www.therockyt.com", "ShutUpPC - About", JOptionPane.INFORMATION_MESSAGE)
+                    JOptionPane.showMessageDialog(frame, "ShutUpPC by TheRockYT\nWebsite: https://www.therockyt.com\nVersion: v$version", "ShutUpPC - About", JOptionPane.INFORMATION_MESSAGE)
                 }
                 if(src.text.equals("Delete")){
                     deleteCurrentPC()
