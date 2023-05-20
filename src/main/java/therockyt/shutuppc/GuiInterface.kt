@@ -22,7 +22,7 @@ import kotlin.system.exitProcess
 
 
 class GuiInterface : ActionListener, KeyAdapter() {
-    val version = "1.0.0"
+    val version = "1.0.3"
     private var frame = JFrame("ShutUpPC by TheRockYT")
     private var jtable: JTable? = null
     private var pctable: PcConfigTable? = null
